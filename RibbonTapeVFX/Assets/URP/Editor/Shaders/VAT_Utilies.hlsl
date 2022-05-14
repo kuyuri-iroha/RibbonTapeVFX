@@ -143,16 +143,19 @@ void VAT_Soft_float(
     outColor = textureCd.xyz;
 }
 
+
 // Soft VAT Lerp
 void VAT_Soft_Lerp_float(
     float3 restPosition,
     float2 uvIndex,
     SamplerState texSampler,
-    Texture2D positionMap,
+    Texture2DArray positionMap,
+    int textureIndex,
     Texture2D normalMap,
     Texture2D colorMap,
     float2 positionBounds,
-    Texture2D positionMap2,
+    Texture2DArray positionMap2,
+    int textureIndex2,
     Texture2D normalMap2,
     Texture2D colorMap2,
     float2 positionBounds2,
@@ -168,15 +171,15 @@ void VAT_Soft_Lerp_float(
     out float3 outColor
 )
 {
-    float2 uvPosition = VAT_offsetUvPosition(uvIndex, offsetFrame, numOfFrames, speed, time, paddedRatio);
+    float3 uvPosition = float3(VAT_offsetUvPosition(uvIndex, offsetFrame, numOfFrames, speed, time, paddedRatio), 0);
 
-    float4 texturePos = positionMap.SampleLevel(texSampler, uvPosition, 0);
+    float4 texturePos = positionMap.SampleLevel(texSampler, uvPosition, textureIndex);
     float4 textureN = normalMap.SampleLevel(texSampler, uvPosition, 0);
     float4 textureCd = colorMap.SampleLevel(texSampler, uvPosition, 0);
 
     texturePos.xyz = lerp(positionBounds.x, positionBounds.y, texturePos.xyz);
 
-    float4 texturePos2 = positionMap2.SampleLevel(texSampler, uvPosition, 0);
+    float4 texturePos2 = positionMap2.SampleLevel(texSampler, uvPosition, textureIndex2);
     float4 textureN2 = normalMap2.SampleLevel(texSampler, uvPosition, 0);
     float4 textureCd2 = colorMap2.SampleLevel(texSampler, uvPosition, 0);
 

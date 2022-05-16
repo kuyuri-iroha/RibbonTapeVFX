@@ -99,8 +99,8 @@ Material:
     - _packNorm: 1
     - _paddedX: 1.0
     - _paddedY: 1.0
-    - _posMax: 21.4436962
-    - _posMin: -18.5214587
+    - _posMax: 16.64385
+    - _posMin: -18.130556600000002
     - _speed: 0.5
     m_Colors:
     - _BaseColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}

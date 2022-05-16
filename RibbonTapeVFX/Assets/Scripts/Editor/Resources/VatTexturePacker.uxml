@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="sourcesContainer">
+        <ui:ListView focusable="true" show-border="true" show-foldout-header="true" show-add-remove-footer="true" reorderable="false" virtualization-method="DynamicHeight" name="sources" binding-path="sources" reorder-mode="Simple" header-title="Source Texture2D" show-alternating-row-backgrounds="None" style="margin-top: 0; margin-bottom: 10px;" />
+        <ui:Button text="Packing" display-tooltip-when-elided="true" name="packingButton" />
+    </ui:VisualElement>
+</ui:UXML>

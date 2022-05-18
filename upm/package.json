@@ -1,0 +1,20 @@
+{
+  "name": "com.kuyuri.ribbon-tape-vfx",
+  "version": "1.0.0",
+  "displayName": "Ribbon Tape VFX",
+  "description": "VFX of ribbon tape, which is common in live productions.",
+  "unity": "2022.1",
+  "dependencies": {
+    "com.unity.visualeffectgraph": "13.1.8"
+  },
+  "keywords": [
+   "VFX",
+   "ribbon",
+   "tape"
+  ],
+  "author": {
+    "name": "Kuyuri Iroha",
+    "email": "contact.kuyuri.iroha@gmail.com",
+    "url": "https://kuyuri-iroha.com"
+  }
+}

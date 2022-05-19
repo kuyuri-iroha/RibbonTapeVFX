@@ -213,16 +213,16 @@ VisualEffect:
       - m_Value: 5
         m_Name: FallingRotationRandomRange
         m_Overridden: 0
-      - m_Value: 180
+      - m_Value: 0
         m_Name: LaunchingRotateDegrees
-        m_Overridden: 1
+        m_Overridden: 0
     m_Vector2f:
       m_Array: []
     m_Vector3f:
       m_Array:
-      - m_Value: {x: 1, y: 0, z: 0}
+      - m_Value: {x: 0, y: 1, z: 0}
         m_Name: LaunchingRotateAxis_direction
-        m_Overridden: 1
+        m_Overridden: 0
     m_Vector4f:
       m_Array: []
     m_Uint:
@@ -256,14 +256,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 20180303}
-  m_LocalRotation: {x: -0.24680212, y: -0.6217643, z: 0.27423078, w: 0.69086564}
-  m_LocalPosition: {x: -0.23, y: 0, z: -10.95}
+  m_LocalRotation: {x: 0, y: 0, z: 0.36893576, w: 0.9294549}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: -83.973, z: 43.3}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 43.3}
 --- !u!1 &439762825
 GameObject:
   m_ObjectHideFlags: 0
@@ -509,6 +509,9 @@ VisualEffect:
           type: 3}
         m_Name: VatBaseMesh
         m_Overridden: 0
+      - m_Value: {fileID: 2800000, guid: 69498affbd7e8214995f01944bca594a, type: 3}
+        m_Name: FallingVatPositionTexture
+        m_Overridden: 1
     m_Bool:
       m_Array: []
 --- !u!4 &1166585676

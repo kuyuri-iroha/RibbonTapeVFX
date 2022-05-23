@@ -23,7 +23,7 @@ The packages required for installation are as follows.
 ### From git URL
 
 Open `Window > Package Manager` and click the + sign in the upper left corner to display `Add package from git URL...`
-You can install the latest version by typing `git+ssh://git@github.com/Kuyuri-Iroha/RibbonTapeVFX.git?path=/RibbonTapeVFX/Assets/RibbonTapeVFX` in the input field that appears when you click to install the latest version.
+You can install the latest version by typing `https://github.com/kuyuri-iroha/RibbonTapeVFX.git?path=/RibbonTapeVFX/Assets/RibbonTapeVFX` in the input field that appears when you click to install the latest version.
 
 ## Unity Version & Dependencies
 
